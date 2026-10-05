@@ -15,10 +15,10 @@
   --blue: #3f6f9c;
   --blue-soft: #dde8f1;
   --blue-ink: #26496b;
-  --celadon: #5f9880;
+  --celadon: #4a8269;
   --celadon-soft: #dcede4;
   --celadon-ink: #2f5e4a;
-  --amber: #c98a2c;
+  --amber: #a86f1c;
   --amber-soft: #f7ecd6;
   --amber-ink: #6e4a12;
   --danger: #b5473a;
@@ -131,6 +131,12 @@ h1, h2, h3 {
 }
 
 input, select, textarea, button { font: inherit; color: inherit; }
+
+/* Comportement d'appli : pas de zoom au double-toucher, pas de sélection
+   ni de menu contextuel sur les commandes et les images. */
+html { touch-action: manipulation; -webkit-text-size-adjust: 100%; }
+button, label, .chip, .btn, .icon-btn { -webkit-user-select: none; user-select: none; }
+img { -webkit-touch-callout: none; -webkit-user-drag: none; }
 button { cursor: pointer; }
 img { display: block; max-width: 100%; }
 
@@ -430,3 +436,6 @@ html[data-nav='retour']::view-transition-new(root) { animation-name: vt-entree-g
     transition-duration: 1ms !important;
   }
 }
+
+/* Trait d'icône maison (Lucide) : 1.75 par défaut, sauf épaisseur explicite */
+svg.lucide[stroke-width='2'] { stroke-width: 1.75; }

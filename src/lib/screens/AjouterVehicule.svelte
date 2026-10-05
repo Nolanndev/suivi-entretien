@@ -14,6 +14,7 @@
   import { redimensionnerImage } from '../image.js'
   import { nav } from '../nav.svelte.js'
   import { aujourdhui } from '../entretiens.js'
+  import { formaterPlaque, etatPlaque } from '../plaque.js'
   import Header from '../Header.svelte'
   import BlobImg from '../BlobImg.svelte'
   import VehiculeIcon from '../VehiculeIcon.svelte'
@@ -28,6 +29,9 @@
   let compteurActuel = $state('')
   let photo = $state(null)
   let enCours = $state(false)
+  // Voitures et motos : plaque SIV ; motoculture : numéro de série libre.
+  const avecPlaque = $derived(type !== 'motoculture')
+  const plaqueInvalide = $derived(avecPlaque && etatPlaque(immatriculationOuSerie) === 'invalide')
   let erreur = $state('')
 
   function choisirType(t) {
@@ -61,7 +65,9 @@
         marque: marque.trim(),
         modele: modele.trim(),
         annee: annee ? Number(annee) : null,
-        immatriculationOuSerie: immatriculationOuSerie.trim(),
+        immatriculationOuSerie: avecPlaque
+          ? formaterPlaque(immatriculationOuSerie)
+          : immatriculationOuSerie.trim(),
         uniteCompteur,
         compteurActuel: Number(compteurActuel) || 0,
       })
@@ -124,8 +130,25 @@
       <input type="number" inputmode="numeric" bind:value={annee} placeholder="2018" />
     </label>
     <label class="field">
-      <span class="field__label"><IdCard size={14} />Immat. / n° série</span>
-      <input type="text" bind:value={immatriculationOuSerie} autocapitalize="characters" />
+      <span class="field__label"><IdCard size={14} />{avecPlaque ? 'Immatriculation' : 'N° de série'}</span>
+      {#if avecPlaque}
+        <input
+          class="plaque-saisie"
+          type="text"
+          autocapitalize="characters"
+          autocomplete="off"
+          spellcheck="false"
+          placeholder="AB-123-CD"
+          maxlength="12"
+          value={immatriculationOuSerie}
+          oninput={(e) => (immatriculationOuSerie = e.target.value = formaterPlaque(e.target.value))}
+        />
+        {#if plaqueInvalide}
+          <span class="avertissement">Les lettres I, O, U et les blocs SS, WW, 000 n’existent pas en SIV.</span>
+        {/if}
+      {:else}
+        <input type="text" bind:value={immatriculationOuSerie} autocapitalize="characters" autocomplete="off" />
+      {/if}
     </label>
   </div>
 
@@ -219,6 +242,16 @@
   }
   .compteur-saisie .segmented button {
     padding: 0 0.9rem;
+  }
+  .plaque-saisie {
+    font-family: var(--font-cond);
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+  }
+  .avertissement {
+    font-size: 0.82rem;
+    color: var(--danger);
   }
   .sources {
     display: grid;

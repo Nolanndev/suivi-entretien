@@ -16,6 +16,7 @@
   import { nav } from '../nav.svelte.js'
   import { formatDate, formatEuros, formatNombre, totalEntretien } from '../entretiens.js'
   import { operationDe, resumeDetails } from '../operations.js'
+  import { formaterPlaque } from '../plaque.js'
   import Header from '../Header.svelte'
   import BlobImg from '../BlobImg.svelte'
   import VehiculeIcon from '../VehiculeIcon.svelte'
@@ -77,7 +78,7 @@
             {#if v.annee}<span class="num"> · {v.annee}</span>{/if}
           </span>
           {#if v.immatriculationOuSerie}
-            <span class="identite__immat">{v.immatriculationOuSerie}</span>
+            <span class="identite__immat">{v.type === 'motoculture' ? v.immatriculationOuSerie : formaterPlaque(v.immatriculationOuSerie)}</span>
           {/if}
         </div>
         {#if photoProfil}

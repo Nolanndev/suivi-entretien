@@ -1,0 +1,620 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-05T23:07:04+00:00",
+  "title": "Design System: Suivi d'entretien",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Pale Zinc",
+        "canonical": "#eef0ec",
+        "oklch": "oklch(95.2% 0.006 128.5)",
+        "dark": "#0f1d30",
+        "tonalRamp": [
+          "oklch(15% 0.006 128.5)",
+          "oklch(25% 0.006 128.5)",
+          "oklch(36% 0.006 128.5)",
+          "oklch(47% 0.006 128.5)",
+          "oklch(58% 0.006 128.5)",
+          "oklch(70% 0.006 128.5)",
+          "oklch(82% 0.006 128.5)",
+          "oklch(95% 0.006 128.5)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Enamel White",
+        "canonical": "#fbfbf8",
+        "oklch": "oklch(98.7% 0.004 106.5)",
+        "dark": "#16283f",
+        "tonalRamp": [
+          "oklch(15% 0.004 106.5)",
+          "oklch(25% 0.004 106.5)",
+          "oklch(36% 0.004 106.5)",
+          "oklch(47% 0.004 106.5)",
+          "oklch(58% 0.004 106.5)",
+          "oklch(70% 0.004 106.5)",
+          "oklch(82% 0.004 106.5)",
+          "oklch(95% 0.004 106.5)"
+        ]
+      },
+      "surface-2": {
+        "role": "neutral",
+        "displayName": "Zinc Wash",
+        "canonical": "#e5e9e4",
+        "oklch": "oklch(93.0% 0.008 139.4)",
+        "dark": "#1e344f",
+        "tonalRamp": [
+          "oklch(15% 0.008 139.4)",
+          "oklch(25% 0.008 139.4)",
+          "oklch(36% 0.008 139.4)",
+          "oklch(47% 0.008 139.4)",
+          "oklch(58% 0.008 139.4)",
+          "oklch(70% 0.008 139.4)",
+          "oklch(82% 0.008 139.4)",
+          "oklch(95% 0.008 139.4)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Rolled Seam",
+        "canonical": "#d3d9d2",
+        "oklch": "oklch(87.9% 0.011 141.3)",
+        "dark": "#2b4462",
+        "tonalRamp": [
+          "oklch(15% 0.011 141.3)",
+          "oklch(25% 0.011 141.3)",
+          "oklch(36% 0.011 141.3)",
+          "oklch(47% 0.011 141.3)",
+          "oklch(58% 0.011 141.3)",
+          "oklch(70% 0.011 141.3)",
+          "oklch(82% 0.011 141.3)",
+          "oklch(95% 0.011 141.3)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Slate Ink",
+        "canonical": "#1f2b35",
+        "oklch": "oklch(28.3% 0.025 244.0)",
+        "dark": "#e6ebee",
+        "tonalRamp": [
+          "oklch(15% 0.025 244.0)",
+          "oklch(25% 0.025 244.0)",
+          "oklch(36% 0.025 244.0)",
+          "oklch(47% 0.025 244.0)",
+          "oklch(58% 0.025 244.0)",
+          "oklch(70% 0.025 244.0)",
+          "oklch(82% 0.025 244.0)",
+          "oklch(95% 0.025 244.0)"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Slate Grey",
+        "canonical": "#4f5d68",
+        "oklch": "oklch(47.1% 0.025 241.8)",
+        "dark": "#a8b5bf",
+        "tonalRamp": [
+          "oklch(15% 0.025 241.8)",
+          "oklch(25% 0.025 241.8)",
+          "oklch(36% 0.025 241.8)",
+          "oklch(47% 0.025 241.8)",
+          "oklch(58% 0.025 241.8)",
+          "oklch(70% 0.025 241.8)",
+          "oklch(82% 0.025 241.8)",
+          "oklch(95% 0.025 241.8)"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Worn Grey",
+        "canonical": "#66727b",
+        "oklch": "oklch(54.5% 0.020 240.3)",
+        "dark": "#8593a0",
+        "tonalRamp": [
+          "oklch(15% 0.020 240.3)",
+          "oklch(25% 0.020 240.3)",
+          "oklch(36% 0.020 240.3)",
+          "oklch(47% 0.020 240.3)",
+          "oklch(58% 0.020 240.3)",
+          "oklch(70% 0.020 240.3)",
+          "oklch(82% 0.020 240.3)",
+          "oklch(95% 0.020 240.3)"
+        ]
+      },
+      "blue": {
+        "role": "secondary",
+        "displayName": "Faded Enamel Blue",
+        "canonical": "#3f6f9c",
+        "oklch": "oklch(52.8% 0.089 248.4)",
+        "dark": "#8db4db",
+        "tonalRamp": [
+          "oklch(15% 0.089 248.4)",
+          "oklch(25% 0.089 248.4)",
+          "oklch(36% 0.089 248.4)",
+          "oklch(47% 0.089 248.4)",
+          "oklch(58% 0.089 248.4)",
+          "oklch(70% 0.089 248.4)",
+          "oklch(82% 0.089 248.4)",
+          "oklch(95% 0.089 248.4)"
+        ]
+      },
+      "blue-soft": {
+        "role": "secondary",
+        "displayName": "Blue Wash",
+        "canonical": "#dde8f1",
+        "oklch": "oklch(92.5% 0.017 242.4)",
+        "dark": "#1d3a5c",
+        "tonalRamp": [
+          "oklch(15% 0.017 242.4)",
+          "oklch(25% 0.017 242.4)",
+          "oklch(36% 0.017 242.4)",
+          "oklch(47% 0.017 242.4)",
+          "oklch(58% 0.017 242.4)",
+          "oklch(70% 0.017 242.4)",
+          "oklch(82% 0.017 242.4)",
+          "oklch(95% 0.017 242.4)"
+        ]
+      },
+      "blue-ink": {
+        "role": "secondary",
+        "displayName": "Deep Blue Ink",
+        "canonical": "#26496b",
+        "oklch": "oklch(39.6% 0.071 249.4)",
+        "dark": "#c9dcef",
+        "tonalRamp": [
+          "oklch(15% 0.071 249.4)",
+          "oklch(25% 0.071 249.4)",
+          "oklch(36% 0.071 249.4)",
+          "oklch(47% 0.071 249.4)",
+          "oklch(58% 0.071 249.4)",
+          "oklch(70% 0.071 249.4)",
+          "oklch(82% 0.071 249.4)",
+          "oklch(95% 0.071 249.4)"
+        ]
+      },
+      "amber": {
+        "role": "tertiary",
+        "displayName": "Faded Amber",
+        "canonical": "#a86f1c",
+        "oklch": "oklch(58.8% 0.117 70.6)",
+        "dark": "#e8b864",
+        "tonalRamp": [
+          "oklch(15% 0.117 70.6)",
+          "oklch(25% 0.117 70.6)",
+          "oklch(35% 0.117 70.6)",
+          "oklch(45% 0.117 70.6)",
+          "oklch(55% 0.117 70.6)",
+          "oklch(65% 0.117 70.6)",
+          "oklch(80% 0.117 70.6)",
+          "oklch(95% 0.117 70.6)"
+        ]
+      },
+      "amber-soft": {
+        "role": "tertiary",
+        "displayName": "Amber Wash",
+        "canonical": "#f7ecd6",
+        "oklch": "oklch(94.6% 0.031 84.6)",
+        "dark": "#3d3020",
+        "tonalRamp": [
+          "oklch(15% 0.031 84.6)",
+          "oklch(25% 0.031 84.6)",
+          "oklch(36% 0.031 84.6)",
+          "oklch(47% 0.031 84.6)",
+          "oklch(58% 0.031 84.6)",
+          "oklch(70% 0.031 84.6)",
+          "oklch(82% 0.031 84.6)",
+          "oklch(95% 0.031 84.6)"
+        ]
+      },
+      "amber-ink": {
+        "role": "tertiary",
+        "displayName": "Burnt Amber Ink",
+        "canonical": "#6e4a12",
+        "oklch": "oklch(43.9% 0.084 73.2)",
+        "dark": "#f2d9a6",
+        "tonalRamp": [
+          "oklch(15% 0.084 73.2)",
+          "oklch(25% 0.084 73.2)",
+          "oklch(36% 0.084 73.2)",
+          "oklch(47% 0.084 73.2)",
+          "oklch(58% 0.084 73.2)",
+          "oklch(70% 0.084 73.2)",
+          "oklch(82% 0.084 73.2)",
+          "oklch(95% 0.084 73.2)"
+        ]
+      },
+      "celadon": {
+        "role": "tertiary",
+        "displayName": "Celadon",
+        "canonical": "#4a8269",
+        "oklch": "oklch(56.0% 0.072 163.7)",
+        "dark": "#8fc2a9",
+        "tonalRamp": [
+          "oklch(15% 0.072 163.7)",
+          "oklch(25% 0.072 163.7)",
+          "oklch(35% 0.072 163.7)",
+          "oklch(45% 0.072 163.7)",
+          "oklch(55% 0.072 163.7)",
+          "oklch(65% 0.072 163.7)",
+          "oklch(80% 0.072 163.7)",
+          "oklch(95% 0.072 163.7)"
+        ]
+      },
+      "celadon-soft": {
+        "role": "tertiary",
+        "displayName": "Celadon Wash",
+        "canonical": "#dcede4",
+        "oklch": "oklch(93.1% 0.022 163.0)",
+        "dark": "#1f3a30",
+        "tonalRamp": [
+          "oklch(15% 0.022 163.0)",
+          "oklch(25% 0.022 163.0)",
+          "oklch(36% 0.022 163.0)",
+          "oklch(47% 0.022 163.0)",
+          "oklch(58% 0.022 163.0)",
+          "oklch(70% 0.022 163.0)",
+          "oklch(82% 0.022 163.0)",
+          "oklch(95% 0.022 163.0)"
+        ]
+      },
+      "celadon-ink": {
+        "role": "tertiary",
+        "displayName": "Bottle Green Ink",
+        "canonical": "#2f5e4a",
+        "oklch": "oklch(44.2% 0.062 164.2)",
+        "dark": "#c4e3d3",
+        "tonalRamp": [
+          "oklch(15% 0.062 164.2)",
+          "oklch(25% 0.062 164.2)",
+          "oklch(36% 0.062 164.2)",
+          "oklch(47% 0.062 164.2)",
+          "oklch(58% 0.062 164.2)",
+          "oklch(70% 0.062 164.2)",
+          "oklch(82% 0.062 164.2)",
+          "oklch(95% 0.062 164.2)"
+        ]
+      },
+      "danger": {
+        "role": "neutral",
+        "displayName": "Brick Red",
+        "canonical": "#b5473a",
+        "oklch": "oklch(54.4% 0.146 29.4)",
+        "dark": "#e38a7e",
+        "tonalRamp": [
+          "oklch(15% 0.120 29.4)",
+          "oklch(25% 0.120 29.4)",
+          "oklch(36% 0.120 29.4)",
+          "oklch(47% 0.120 29.4)",
+          "oklch(58% 0.120 29.4)",
+          "oklch(70% 0.120 29.4)",
+          "oklch(82% 0.120 29.4)",
+          "oklch(95% 0.120 29.4)"
+        ]
+      },
+      "danger-soft": {
+        "role": "neutral",
+        "displayName": "Brick Wash",
+        "canonical": "#f6dfdb",
+        "oklch": "oklch(92.1% 0.026 29.4)",
+        "dark": "#3f2421",
+        "tonalRamp": [
+          "oklch(15% 0.026 29.4)",
+          "oklch(25% 0.026 29.4)",
+          "oklch(36% 0.026 29.4)",
+          "oklch(47% 0.026 29.4)",
+          "oklch(58% 0.026 29.4)",
+          "oklch(70% 0.026 29.4)",
+          "oklch(82% 0.026 29.4)",
+          "oklch(95% 0.026 29.4)"
+        ]
+      },
+      "tile": {
+        "role": "primary",
+        "displayName": "Street-Plate Navy",
+        "canonical": "#2c4d6e",
+        "oklch": "oklch(41.1% 0.068 249.8)",
+        "dark": "#3a679a",
+        "tonalRamp": [
+          "oklch(15% 0.068 249.8)",
+          "oklch(25% 0.068 249.8)",
+          "oklch(36% 0.068 249.8)",
+          "oklch(47% 0.068 249.8)",
+          "oklch(58% 0.068 249.8)",
+          "oklch(70% 0.068 249.8)",
+          "oklch(82% 0.068 249.8)",
+          "oklch(95% 0.068 249.8)"
+        ]
+      },
+      "tile-ink": {
+        "role": "primary",
+        "displayName": "Enamel Cream",
+        "canonical": "#f4f3ee",
+        "oklch": "oklch(96.4% 0.007 97.4)",
+        "dark": "#f4f3ee",
+        "tonalRamp": [
+          "oklch(15% 0.007 97.4)",
+          "oklch(25% 0.007 97.4)",
+          "oklch(36% 0.007 97.4)",
+          "oklch(47% 0.007 97.4)",
+          "oklch(58% 0.007 97.4)",
+          "oklch(70% 0.007 97.4)",
+          "oklch(82% 0.007 97.4)",
+          "oklch(95% 0.007 97.4)"
+        ]
+      },
+      "tile-rim": {
+        "role": "primary",
+        "displayName": "Faded Sky Rim",
+        "canonical": "#8fb0cf",
+        "oklch": "oklch(74.4% 0.058 247.0)",
+        "dark": "#a9c4df",
+        "tonalRamp": [
+          "oklch(15% 0.058 247.0)",
+          "oklch(25% 0.058 247.0)",
+          "oklch(36% 0.058 247.0)",
+          "oklch(47% 0.058 247.0)",
+          "oklch(58% 0.058 247.0)",
+          "oklch(70% 0.058 247.0)",
+          "oklch(82% 0.058 247.0)",
+          "oklch(95% 0.058 247.0)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "meter": {
+        "displayName": "Meter",
+        "purpose": "Meter digits inside enamel tiles; 0.95rem / 1.25rem / 1.85rem by size; unit at 0.72em in capitals."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Record summary title and empty-state title, uppercase."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Vehicle name on its plate, uppercase."
+      },
+      "header-title": {
+        "displayName": "Header Title",
+        "purpose": "Sticky screen title, uppercase, ellipsis."
+      },
+      "section-title": {
+        "displayName": "Section Title",
+        "purpose": "Section heads, uppercase, led by a 20px icon."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text and inputs; notes cap at 65ch."
+      },
+      "body-sm": {
+        "displayName": "Body Sm",
+        "purpose": "Summaries (Slate Grey) and metadata (Worn Grey), 0.82 to 0.9rem."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Field labels, uppercase, Slate Grey, each with a 14px icon."
+      }
+    },
+    "themes": {
+      "default": "system (prefers-color-scheme)",
+      "light": ":root / [data-theme=light]",
+      "dark": "@media (prefers-color-scheme: dark) :root:not([data-theme=light]) and :root[data-theme=dark]",
+      "toggle": "Header theme button cycles systeme / clair / sombre, stored in localStorage; meta theme-color follows (#eef0ec / #0f1d30).",
+      "typeScopes": {
+        "t-voiture": "blue",
+        "t-moto": "amber",
+        "t-motoculture": "celadon"
+      }
+    },
+    "shadows": [
+      {
+        "name": "shadow-plate",
+        "value": "0 1px 2px rgb(31 43 53 / 0.06), 0 8px 18px -12px rgb(31 43 53 / 0.28)",
+        "dark": "0 1px 2px rgb(0 0 0 / 0.3), 0 8px 18px -12px rgb(0 0 0 / 0.6)",
+        "purpose": "Ambient lift under every enamel plate."
+      },
+      {
+        "name": "shadow-float",
+        "value": "0 2px 4px rgb(31 43 53 / 0.12), 0 12px 24px -8px rgb(31 43 53 / 0.35)",
+        "dark": "0 2px 4px rgb(0 0 0 / 0.35), 0 12px 24px -8px rgb(0 0 0 / 0.7)",
+        "purpose": "Floating add button only."
+      },
+      {
+        "name": "segment-lift",
+        "value": "0 1px 2px rgb(31 43 53 / 0.12)",
+        "purpose": "Selected segment of a segmented control."
+      },
+      {
+        "name": "plate-rim",
+        "value": "inset 0 0 0 3px var(--p-soft), inset 0 0 0 4px color-mix(in oklab, var(--p) 32%, transparent)",
+        "purpose": "Double inner rim of a plate."
+      },
+      {
+        "name": "tile-rim",
+        "value": "inset 0 0 0 1.5px var(--tile), inset 0 0 0 2.5px var(--tile-rim)",
+        "purpose": "Double inner rim of a meter digit tile (2px/3px on the primary button, 3px/4px on the add button)."
+      },
+      {
+        "name": "focus-halo",
+        "value": "0 0 0 3px color-mix(in oklab, var(--blue) 22%, transparent)",
+        "purpose": "Focused inputs; other controls use a 2px blue outline offset 2px."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(0.2, 0.8, 0.2, 1)",
+        "purpose": "The only easing curve, for transitions and screen changes."
+      },
+      {
+        "name": "screen-transition",
+        "value": "240ms",
+        "purpose": "Directional View Transitions: forward exits left 28px / enters from right 36px; back mirrors. Header, bottom bar and add button keep their own transition names; a vehicle plate morphs into its page plate."
+      },
+      {
+        "name": "state-change",
+        "value": "160ms",
+        "purpose": "Colour, border and shadow changes on controls."
+      },
+      {
+        "name": "press",
+        "value": "120ms; scale 0.97 buttons, 0.96 chips, 0.95 wheels, 0.92 icon buttons and FAB, 0.98 plates (140ms)",
+        "purpose": "Press feedback."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "all animation and transition durations 1ms",
+        "purpose": "prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "column",
+        "value": "40rem",
+        "purpose": "Max screen column; header, bottom bar and FAB align to 38rem."
+      }
+    ],
+    "icons": {
+      "library": "Lucide (@lucide/svelte)",
+      "confirmedStroke": 1.75,
+      "shipped": "1.75 everywhere by default (app.css overrides Lucide's default stroke 2); explicit emphasis strokes: 2 to 2.5 for small check/back/plus glyphs, 1.5 for large file placeholders."
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Street-plate navy tile with the double rim; the one main action of a screen, usually in the bottom bar.",
+      "html": "<button class=\"ds-btn ds-btn-primary\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14\"/><path d=\"M12 5v14\"/></svg> Nouvel entretien</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:48px;padding:.7rem 1.1rem;border-radius:var(--r-md,12px);border:1px solid transparent;font-family:var(--font,'Barlow',system-ui,sans-serif);font-weight:600;font-size:1rem;cursor:pointer;transition:transform 120ms var(--ease,cubic-bezier(.2,.8,.2,1)),background-color 160ms var(--ease,cubic-bezier(.2,.8,.2,1)),border-color 160ms var(--ease,cubic-bezier(.2,.8,.2,1))}.ds-btn:active{transform:scale(.97)}.ds-btn:focus-visible{outline:2px solid var(--blue,#3f6f9c);outline-offset:2px}.ds-btn-primary{background:var(--tile,#2c4d6e);color:var(--tile-ink,#f4f3ee);box-shadow:inset 0 0 0 2px var(--tile,#2c4d6e),inset 0 0 0 3px color-mix(in oklab,var(--tile-rim,#8fb0cf) 70%,transparent)}.ds-btn-primary:hover{background:color-mix(in oklab,var(--tile,#2c4d6e) 88%,white)}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Enamel white with a seam border for secondary actions.",
+      "html": "<button class=\"ds-btn ds-btn-secondary\">Annuler</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:48px;padding:.7rem 1.1rem;border-radius:var(--r-md,12px);border:1px solid transparent;font-family:var(--font,'Barlow',system-ui,sans-serif);font-weight:600;font-size:1rem;cursor:pointer;transition:transform 120ms var(--ease,cubic-bezier(.2,.8,.2,1)),background-color 160ms var(--ease,cubic-bezier(.2,.8,.2,1)),border-color 160ms var(--ease,cubic-bezier(.2,.8,.2,1))}.ds-btn:active{transform:scale(.97)}.ds-btn:focus-visible{outline:2px solid var(--blue,#3f6f9c);outline-offset:2px}.ds-btn-secondary{background:var(--surface,#fbfbf8);border-color:var(--line,#d3d9d2);color:var(--ink,#1f2b35)}.ds-btn-secondary:hover{border-color:var(--ink-3,#66727b)}"
+    },
+    {
+      "name": "Danger Button",
+      "kind": "button",
+      "refersTo": "button-danger",
+      "description": "Outlined brick red; only inside the isolated danger zone confirmation.",
+      "html": "<button class=\"ds-btn ds-btn-danger\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h18\"/><path d=\"M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6\"/><path d=\"M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2\"/></svg> Supprimer</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:48px;padding:.7rem 1.1rem;border-radius:var(--r-md,12px);border:1px solid transparent;font-family:var(--font,'Barlow',system-ui,sans-serif);font-weight:600;font-size:1rem;cursor:pointer;transition:transform 120ms var(--ease,cubic-bezier(.2,.8,.2,1)),background-color 160ms var(--ease,cubic-bezier(.2,.8,.2,1)),border-color 160ms var(--ease,cubic-bezier(.2,.8,.2,1))}.ds-btn:active{transform:scale(.97)}.ds-btn:focus-visible{outline:2px solid var(--blue,#3f6f9c);outline-offset:2px}.ds-btn-danger{background:transparent;border-color:color-mix(in oklab,var(--danger,#b5473a) 45%,transparent);color:var(--danger,#b5473a)}.ds-btn-danger:hover{background:var(--danger-soft,#f6dfdb)}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "48px enamel-white field with an uppercase label; blue border and halo on focus.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-label\">Garage</span><input class=\"ds-input\" placeholder=\"Nom du garage\"></label>",
+      "css": ".ds-field{display:flex;flex-direction:column;gap:.35rem;font-family:var(--font,'Barlow',system-ui,sans-serif)}.ds-label{font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2,#4f5d68)}.ds-input{min-height:48px;background:var(--surface,#fbfbf8);border:1px solid var(--line,#d3d9d2);border-radius:var(--r-md,12px);padding:.65rem .8rem;font:inherit;font-size:1rem;color:var(--ink,#1f2b35);transition:border-color 160ms,box-shadow 160ms}.ds-input::placeholder{color:var(--ink-3,#66727b)}.ds-input:focus{outline:none;border-color:var(--blue,#3f6f9c);box-shadow:0 0 0 3px color-mix(in oklab,var(--blue,#3f6f9c) 22%,transparent)}"
+    },
+    {
+      "name": "Choice Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Toggle chip; selected state takes the blue wash.",
+      "html": "<div class=\"ds-chips\"><button class=\"ds-chip\" aria-pressed=\"true\">Avant</button><button class=\"ds-chip\" aria-pressed=\"false\">Arrière</button></div>",
+      "css": ".ds-chips{display:flex;gap:.45rem;flex-wrap:wrap}.ds-chip{min-height:40px;padding:.4rem .8rem;border-radius:var(--r-sm,8px);border:1px solid var(--line,#d3d9d2);background:var(--surface,#fbfbf8);color:var(--ink,#1f2b35);font-family:var(--font,'Barlow',system-ui,sans-serif);font-size:.95rem;cursor:pointer;transition:background-color 160ms,border-color 160ms,transform 120ms}.ds-chip:active{transform:scale(.96)}.ds-chip:focus-visible{outline:2px solid var(--blue,#3f6f9c);outline-offset:2px}.ds-chip[aria-pressed=true]{background:var(--blue-soft,#dde8f1);border-color:var(--blue,#3f6f9c);color:var(--blue-ink,#26496b);font-weight:600}"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": "header-title",
+      "description": "Sticky frosted header with back chevron and condensed capital title.",
+      "html": "<header class=\"ds-header\"><button class=\"ds-icon-btn\" aria-label=\"Retour\"><svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m15 18-6-6 6-6\"/></svg></button><h1 class=\"ds-header-title\">Clio de tous les jours</h1></header>",
+      "css": ".ds-header{display:flex;align-items:center;gap:.25rem;min-height:56px;padding:.4rem .5rem;background:color-mix(in oklab,var(--ground,#eef0ec) 88%,transparent);backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--line,#d3d9d2)}.ds-icon-btn{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:none;border-radius:var(--r-md,12px);background:transparent;color:var(--ink,#1f2b35);cursor:pointer}.ds-icon-btn:hover{background:var(--surface-2,#e5e9e4)}.ds-icon-btn:active{transform:scale(.92)}.ds-icon-btn:focus-visible{outline:2px solid var(--blue,#3f6f9c);outline-offset:2px}.ds-header-title{margin:0;font-family:var(--font-cond,'Barlow Condensed',sans-serif);font-weight:600;font-size:1.3rem;line-height:1.1;letter-spacing:.03em;text-transform:uppercase;color:var(--ink,#1f2b35)}"
+    },
+    {
+      "name": "Vehicle Plate",
+      "kind": "card",
+      "refersTo": "plate-car",
+      "description": "Signature enamel plate for a vehicle: type badge, condensed name, tile meter; enamel set by vehicle type.",
+      "html": "<button class=\"ds-plate\"><span class=\"ds-badge\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m21 8-2 2-1.5-3.7A2 2 0 0 0 15.646 5H8.4a2 2 0 0 0-1.903 1.257L5 10 3 8\"/><path d=\"M7 14h.01\"/><path d=\"M17 14h.01\"/><rect width=\"18\" height=\"8\" x=\"3\" y=\"10\" rx=\"2\"/><path d=\"M5 18v2\"/><path d=\"M19 18v2\"/></svg></span><span class=\"ds-plate-body\"><span class=\"ds-plate-name\">Clio de tous les jours</span><span class=\"ds-meter\"><span class=\"ds-grp\"><span class=\"ds-d\">1</span><span class=\"ds-d\">2</span><span class=\"ds-d\">8</span></span><span class=\"ds-grp\"><span class=\"ds-d\">4</span><span class=\"ds-d\">5</span><span class=\"ds-d\">0</span></span><span class=\"ds-unit\">km</span></span></span></button>",
+      "css": ".ds-plate{--p:var(--blue,#3f6f9c);--p-soft:var(--blue-soft,#dde8f1);--p-ink:var(--blue-ink,#26496b);display:grid;grid-template-columns:auto 1fr;gap:.9rem;align-items:center;width:100%;padding:1rem;text-align:left;color:var(--ink,#1f2b35);background:var(--p-soft);border:1px solid color-mix(in oklab,var(--p) 50%,transparent);border-radius:var(--r-lg,16px);box-shadow:inset 0 0 0 3px var(--p-soft),inset 0 0 0 4px color-mix(in oklab,var(--p) 32%,transparent),0 1px 2px rgb(31 43 53/.06),0 8px 18px -12px rgb(31 43 53/.28);cursor:pointer;transition:transform 140ms cubic-bezier(.2,.8,.2,1)}.ds-plate:active{transform:scale(.98)}.ds-plate:focus-visible{outline:2px solid var(--blue,#3f6f9c);outline-offset:2px}.ds-badge{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:var(--p);color:var(--p-soft);box-shadow:inset 0 0 0 2px var(--p),inset 0 0 0 3px color-mix(in oklab,var(--p-soft) 70%,transparent);align-self:start}.ds-plate-body{display:flex;flex-direction:column;gap:.3rem}.ds-plate-name{font-family:var(--font-cond,'Barlow Condensed',sans-serif);font-size:1.45rem;font-weight:600;line-height:1.05;letter-spacing:.02em;text-transform:uppercase}.ds-meter{display:inline-flex;align-items:center;gap:.28em;font-family:var(--font-cond,'Barlow Condensed',sans-serif);font-weight:600;line-height:1;font-size:.95rem}.ds-grp{display:inline-flex;gap:2px}.ds-d{display:inline-grid;place-items:center;width:1.05em;height:1.45em;border-radius:.2em;background:var(--tile,#2c4d6e);color:var(--tile-ink,#f4f3ee);box-shadow:inset 0 0 0 1.5px var(--tile,#2c4d6e),inset 0 0 0 2.5px var(--tile-rim,#8fb0cf);font-variant-numeric:tabular-nums}.ds-unit{margin-left:.15em;font-size:.72em;letter-spacing:.06em;text-transform:uppercase;color:var(--p-ink)}"
+    },
+    {
+      "name": "Enamel Meter",
+      "kind": "custom",
+      "refersTo": "meter-tile",
+      "description": "Signature meter: one navy enamel tile per digit, grouped by thousands, unit in capitals. Large size shown.",
+      "html": "<span class=\"ds-meter-lg\" role=\"img\" aria-label=\"128450 km\"><span class=\"ds-g\"><span class=\"ds-t\">1</span><span class=\"ds-t\">2</span><span class=\"ds-t\">8</span></span><span class=\"ds-g\"><span class=\"ds-t\">4</span><span class=\"ds-t\">5</span><span class=\"ds-t\">0</span></span><span class=\"ds-u\">km</span></span>",
+      "css": ".ds-meter-lg{display:inline-flex;align-items:center;gap:.28em;font-family:var(--font-cond,'Barlow Condensed',sans-serif);font-weight:600;line-height:1;font-size:1.85rem}.ds-g{display:inline-flex;gap:3px}.ds-t{display:inline-grid;place-items:center;width:1.05em;height:1.45em;border-radius:.2em;background:var(--tile,#2c4d6e);color:var(--tile-ink,#f4f3ee);box-shadow:inset 0 0 0 1.5px var(--tile,#2c4d6e),inset 0 0 0 2.5px var(--tile-rim,#8fb0cf);font-variant-numeric:tabular-nums}.ds-u{margin-left:.15em;font-size:.72em;letter-spacing:.06em;text-transform:uppercase;color:var(--blue-ink,#26496b)}"
+    },
+    {
+      "name": "Floating Add Button",
+      "kind": "button",
+      "refersTo": "fab",
+      "description": "60px round navy tile with double rim and float shadow, bottom right on the home screen.",
+      "html": "<button class=\"ds-fab\" aria-label=\"Ajouter un véhicule\"><svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14\"/><path d=\"M12 5v14\"/></svg></button>",
+      "css": ".ds-fab{display:grid;place-items:center;width:60px;height:60px;border-radius:50%;border:none;background:var(--tile,#2c4d6e);color:var(--tile-ink,#f4f3ee);box-shadow:inset 0 0 0 3px var(--tile,#2c4d6e),inset 0 0 0 4px var(--tile-rim,#8fb0cf),0 2px 4px rgb(31 43 53/.12),0 12px 24px -8px rgb(31 43 53/.35);cursor:pointer;transition:transform 140ms cubic-bezier(.2,.8,.2,1)}.ds-fab:active{transform:scale(.92)}.ds-fab:focus-visible{outline:2px solid var(--blue,#3f6f9c);outline-offset:2px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Enamel Plate",
+    "overview": "**Creative North Star: \"The Enamel Plate\"**\n\nEvery vehicle is a faded enamel plate screwed to a garage wall: soft blue, amber or celadon enamel, condensed capital lettering, a rolled edge with a second rim inside it. The meter is set like a street-number plate, one enamel tile per digit. Around the plates the app is quiet: pale zinc ground, near-white panels, slate ink. It reads as a logbook kept by a person with a toolbox, not as a generated dashboard.\n\nThe system is simple and calm by commitment. Colours are soft and easy on the eyes in both themes; the light theme is zinc and enamel white, the dark theme is deep enamel navy. The theme follows the system by default and a toggle in the home header forces light or dark. Density is mobile-first and thumb-sized: 48px controls, a fixed bottom action bar, a floating add button. One icon library (Lucide) carries a glyph beside almost every label, title and figure.\n\nMotion is a short directional slide between screens (native View Transitions, 240ms, `cubic-bezier(0.2, 0.8, 0.2, 1)`): forward slides in from the right, back from the left, while the header and bottom bar morph in place. Presses scale down slightly. Reduced motion collapses every animation and transition to 1ms.",
+    "keyCharacteristics": [
+      "Colour confined to the plates: vehicle plates, type badges, meter tiles, the primary tile button.",
+      "One enamel per vehicle type: blue for car, amber for motorbike, celadon for motoculture.",
+      "Double inner rim on every enamel surface.",
+      "Barlow Condensed capitals for names, titles and figures; Barlow for running text.",
+      "Right-aligned tabular figures, totals under a heavy ink rule.",
+      "Destructive actions isolated at the bottom, behind a confirmation.",
+      "Light and dark, following the system, with a header toggle."
+    ],
+    "rules": [
+      {
+        "name": "The Plates Hold the Colour Rule",
+        "body": "Full enamel colour lives on plates only: vehicle plates, type badges, meter tiles and the tile buttons. Lists, forms and chrome stay zinc, white and slate. The one sanctioned exception is enamel blue at its soft tint as the interaction signal (focus, selection, caret).",
+        "section": "colors"
+      },
+      {
+        "name": "The One Enamel Per Vehicle Rule",
+        "body": "A vehicle's enamel is chosen by its type, never by hand: car is blue, motorbike is amber, motoculture is celadon. Components read the trio through the type scope (`--p`, `--p-soft`, `--p-ink`), so a new surface inherits the right enamel by sitting inside it.",
+        "section": "colors"
+      },
+      {
+        "name": "The Stamped Capitals Rule",
+        "body": "Names, titles, section heads, totals and meter units are Barlow Condensed 600 in capitals with positive tracking (0.01 to 0.04em). Sentences are never set in capitals.",
+        "section": "typography"
+      },
+      {
+        "name": "The Ledger Rule",
+        "body": "Every amount, quantity and meter reading uses tabular figures and aligns right; totals sit under a 2px Slate Ink rule, label in condensed capitals, figure larger (1.3 to 1.45rem).",
+        "section": "typography"
+      },
+      {
+        "name": "The Double Rim Rule",
+        "body": "Every enamel surface has a rim inside its edge, drawn with inset shadows: plates leave a 3px band of their own wash then a 1px rim of their enamel at 32%; tiles, badges, the primary button and the add button leave 1.5 to 3px of their own fill then a 1px pale rim. No enamel surface ships without it; neutral panels never get it.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep colour on plates: vehicle plates, type badges, meter tiles and tile buttons; everything else stays zinc, white and slate.",
+      "Do take a vehicle's enamel from its type scope (car blue, motorbike amber, motoculture celadon), never pick it by hand.",
+      "Do give every enamel surface its double inner rim.",
+      "Do set the meter as enamel figure tiles wherever a meter reading is the subject.",
+      "Do set names, titles, section heads and totals in Barlow Condensed 600 capitals; set sentences in Barlow.",
+      "Do align every amount and quantity right in tabular figures, with totals under a 2px Slate Ink rule.",
+      "Do put a Lucide glyph beside section titles, field labels, metadata and actions; use Lucide only.",
+      "Do keep the main action in the thumb zone: the fixed bottom bar or the floating add button.",
+      "Do keep controls at 48px (icon buttons 44px, chips 40px).",
+      "Do transition screens with directional View Transitions at 240ms on `cubic-bezier(0.2, 0.8, 0.2, 1)`, and collapse motion under reduced motion.",
+      "Do define every colour in both themes; the theme follows the system unless the header toggle forces it."
+    ],
+    "donts": [
+      "Don't put an eyebrow or kicker label above a title.",
+      "Don't spread enamel colour into lists, forms or chrome, and don't tint a meter tile by vehicle type.",
+      "Don't place a destructive action next to a constructive one; isolate it at the bottom behind a confirmation.",
+      "Don't mix icon libraries or draw icons as text glyphs or emoji.",
+      "Don't use saturated or neon colour; enamels stay faded and soft in both themes.",
+      "Don't fall back to a grey iOS list with a single blue accent; vehicles are plates.",
+      "Don't set sentences or paragraphs in capitals."
+    ]
+  }
+}

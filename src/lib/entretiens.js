@@ -33,6 +33,13 @@ export function formatDate(iso) {
   })
 }
 
+// Instant ISO complet (ex. date d'export), affiché à l'heure locale.
+export function formatInstant(iso) {
+  const d = iso ? new Date(iso) : null
+  if (!d || isNaN(d)) return 'date inconnue'
+  return d.toLocaleDateString('fr-FR', { day: 'numeric', month: 'short', year: 'numeric' })
+}
+
 export function aujourdhui() {
   const d = new Date()
   const p = (n) => String(n).padStart(2, '0')

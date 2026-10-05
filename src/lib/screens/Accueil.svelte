@@ -6,6 +6,7 @@
   import Moon from '@lucide/svelte/icons/moon'
   import SunMoon from '@lucide/svelte/icons/sun-moon'
   import Wrench from '@lucide/svelte/icons/wrench'
+  import DatabaseBackup from '@lucide/svelte/icons/database-backup'
   import ChevronRight from '@lucide/svelte/icons/chevron-right'
   import { db } from '../../db.js'
   import { liveData } from '../liveQuery.svelte.js'
@@ -47,6 +48,9 @@
 
 <Header titre="Mes véhicules">
   {#snippet actions()}
+    <button class="icon-btn" onclick={() => nav.aller('sauvegarde')} aria-label="Sauvegarde : exporter ou restaurer">
+      <DatabaseBackup size={22} />
+    </button>
     <button
       class="theme-btn"
       onclick={() => theme.suivant()}
