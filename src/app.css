@@ -1,0 +1,432 @@
+/* ==========================================================================
+   Plaque émaillée — émail passé, lettrage condensé, bord roulé.
+   Clair par défaut selon le système ; [data-theme] force un thème.
+   ========================================================================== */
+
+:root {
+  --ground: #eef0ec;
+  --surface: #fbfbf8;
+  --surface-2: #e5e9e4;
+  --line: #d3d9d2;
+  --ink: #1f2b35;
+  --ink-2: #4f5d68;
+  --ink-3: #66727b;
+
+  --blue: #3f6f9c;
+  --blue-soft: #dde8f1;
+  --blue-ink: #26496b;
+  --celadon: #5f9880;
+  --celadon-soft: #dcede4;
+  --celadon-ink: #2f5e4a;
+  --amber: #c98a2c;
+  --amber-soft: #f7ecd6;
+  --amber-ink: #6e4a12;
+  --danger: #b5473a;
+  --danger-soft: #f6dfdb;
+
+  --tile: #2c4d6e;
+  --tile-ink: #f4f3ee;
+  --tile-rim: #8fb0cf;
+
+  --shadow-plate: 0 1px 2px rgb(31 43 53 / 0.06), 0 8px 18px -12px rgb(31 43 53 / 0.28);
+  --shadow-float: 0 2px 4px rgb(31 43 53 / 0.12), 0 12px 24px -8px rgb(31 43 53 / 0.35);
+
+  --font: 'Barlow', -apple-system, system-ui, sans-serif;
+  --font-cond: 'Barlow Condensed', 'Barlow', -apple-system, system-ui, sans-serif;
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 16px;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --ground: #0f1d30;
+    --surface: #16283f;
+    --surface-2: #1e344f;
+    --line: #2b4462;
+    --ink: #e6ebee;
+    --ink-2: #a8b5bf;
+    --ink-3: #8593a0;
+    --blue: #8db4db;
+    --blue-soft: #1d3a5c;
+    --blue-ink: #c9dcef;
+    --celadon: #8fc2a9;
+    --celadon-soft: #1f3a30;
+    --celadon-ink: #c4e3d3;
+    --amber: #e8b864;
+    --amber-soft: #3d3020;
+    --amber-ink: #f2d9a6;
+    --danger: #e38a7e;
+    --danger-soft: #3f2421;
+    --tile: #3a679a;
+    --tile-rim: #a9c4df;
+    --shadow-plate: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 18px -12px rgb(0 0 0 / 0.6);
+    --shadow-float: 0 2px 4px rgb(0 0 0 / 0.35), 0 12px 24px -8px rgb(0 0 0 / 0.7);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --ground: #0f1d30;
+  --surface: #16283f;
+  --surface-2: #1e344f;
+  --line: #2b4462;
+  --ink: #e6ebee;
+  --ink-2: #a8b5bf;
+  --ink-3: #8593a0;
+  --blue: #8db4db;
+  --blue-soft: #1d3a5c;
+  --blue-ink: #c9dcef;
+  --celadon: #8fc2a9;
+  --celadon-soft: #1f3a30;
+  --celadon-ink: #c4e3d3;
+  --amber: #e8b864;
+  --amber-soft: #3d3020;
+  --amber-ink: #f2d9a6;
+  --danger: #e38a7e;
+  --danger-soft: #3f2421;
+  --tile: #3a679a;
+    --tile-rim: #a9c4df;
+  --shadow-plate: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 18px -12px rgb(0 0 0 / 0.6);
+  --shadow-float: 0 2px 4px rgb(0 0 0 / 0.35), 0 12px 24px -8px rgb(0 0 0 / 0.7);
+  color-scheme: dark;
+}
+
+/* Couleur d'émail par type de véhicule */
+.t-voiture { --p: var(--blue); --p-soft: var(--blue-soft); --p-ink: var(--blue-ink); }
+.t-moto { --p: var(--amber); --p-soft: var(--amber-soft); --p-ink: var(--amber-ink); }
+.t-motoculture { --p: var(--celadon); --p-soft: var(--celadon-soft); --p-ink: var(--celadon-ink); }
+
+/* --- Base ---------------------------------------------------------------- */
+
+* { box-sizing: border-box; }
+
+html,
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+  caret-color: var(--blue);
+  accent-color: var(--blue);
+}
+
+::selection { background: var(--blue-soft); color: var(--blue-ink); }
+
+h1, h2, h3 {
+  font-family: var(--font-cond);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+  margin: 0;
+  text-wrap: balance;
+}
+
+input, select, textarea, button { font: inherit; color: inherit; }
+button { cursor: pointer; }
+img { display: block; max-width: 100%; }
+
+.num { font-variant-numeric: tabular-nums; }
+
+:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+/* --- Champs -------------------------------------------------------------- */
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.field__label,
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+input:not([type='checkbox']):not([type='radio']):not([type='file']),
+select,
+textarea {
+  width: 100%;
+  min-height: 48px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  padding: 0.65rem 0.8rem;
+  font-size: 1rem;
+  transition: border-color 160ms var(--ease), box-shadow 160ms var(--ease);
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%2366727b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m4 6 4 4 4-4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem center;
+  padding-right: 2.2rem;
+}
+
+input::placeholder,
+textarea::placeholder { color: var(--ink-3); }
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--blue) 22%, transparent);
+}
+
+textarea { resize: vertical; line-height: 1.45; }
+
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+/* --- Boutons ------------------------------------------------------------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 48px;
+  padding: 0.7rem 1.1rem;
+  border-radius: var(--r-md);
+  border: 1px solid transparent;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: transform 120ms var(--ease), background-color 160ms var(--ease),
+    border-color 160ms var(--ease), opacity 160ms var(--ease);
+}
+.btn:active { transform: scale(0.97); }
+.btn:disabled { opacity: 0.55; pointer-events: none; }
+
+.btn--primary {
+  background: var(--tile);
+  color: var(--tile-ink);
+  box-shadow: inset 0 0 0 2px var(--tile), inset 0 0 0 3px color-mix(in oklab, var(--tile-rim) 70%, transparent);
+}
+.btn--primary:hover { background: color-mix(in oklab, var(--tile) 88%, white); }
+
+.btn--secondary {
+  background: var(--surface);
+  border-color: var(--line);
+  color: var(--ink);
+}
+.btn--secondary:hover { border-color: var(--ink-3); }
+
+.btn--ghost {
+  background: transparent;
+  color: var(--ink-2);
+}
+.btn--ghost:hover { color: var(--ink); background: var(--surface-2); }
+
+.btn--danger {
+  background: transparent;
+  border-color: color-mix(in oklab, var(--danger) 45%, transparent);
+  color: var(--danger);
+}
+.btn--danger:hover { background: var(--danger-soft); }
+
+.btn--block { width: 100%; }
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--r-md);
+  border: none;
+  background: transparent;
+  color: var(--ink-2);
+  transition: background-color 160ms var(--ease), transform 120ms var(--ease);
+}
+.icon-btn:hover { background: var(--surface-2); color: var(--ink); }
+.icon-btn:active { transform: scale(0.92); }
+
+/* --- Puces de choix ------------------------------------------------------ */
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 40px;
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 0.95rem;
+  transition: background-color 160ms var(--ease), border-color 160ms var(--ease),
+    color 160ms var(--ease), transform 120ms var(--ease);
+}
+.chip:active { transform: scale(0.96); }
+.chip[aria-pressed='true'] {
+  background: var(--blue-soft);
+  border-color: var(--blue);
+  color: var(--blue-ink);
+  font-weight: 600;
+}
+
+/* Contrôle segmenté */
+.segmented {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 4px;
+  padding: 4px;
+  background: var(--surface-2);
+  border-radius: var(--r-md);
+}
+.segmented button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-height: 42px;
+  border: none;
+  border-radius: var(--r-sm);
+  background: transparent;
+  color: var(--ink-2);
+  font-weight: 500;
+  transition: background-color 180ms var(--ease), color 180ms var(--ease), box-shadow 180ms var(--ease);
+}
+.segmented button[aria-pressed='true'] {
+  background: var(--surface);
+  color: var(--ink);
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgb(31 43 53 / 0.12);
+}
+
+/* --- Plaque émaillée ----------------------------------------------------- */
+
+.plaque {
+  background: var(--p-soft, var(--surface));
+  border: 1px solid color-mix(in oklab, var(--p, var(--line)) 50%, transparent);
+  border-radius: var(--r-lg);
+  box-shadow:
+    inset 0 0 0 3px var(--p-soft, var(--surface)),
+    inset 0 0 0 4px color-mix(in oklab, var(--p, var(--line)) 32%, transparent),
+    var(--shadow-plate);
+}
+
+/* Panneau neutre (listes, formulaires groupés) */
+.panneau {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+}
+
+/* Écran standard */
+.screen {
+  padding: 1rem 1rem calc(env(safe-area-inset-bottom, 0px) + 6rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  margin-top: 0.4rem;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 2rem 1rem;
+  color: var(--ink-2);
+  line-height: 1.5;
+}
+
+.erreur {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--danger);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Barre d'action collée en bas (au pouce) */
+.barre-action {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  padding: 0.75rem 1rem calc(env(safe-area-inset-bottom, 0px) + 0.75rem);
+  background: linear-gradient(to top, var(--ground) 65%, transparent);
+  view-transition-name: barre-action;
+}
+.barre-action > * { max-width: 38rem; margin: 0 auto; }
+.barre-action > .btn--block { display: flex; }
+
+/* --- Transitions entre écrans ------------------------------------------- */
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 240ms;
+  animation-timing-function: var(--ease);
+}
+html[data-nav='avant']::view-transition-old(root) { animation-name: vt-sortie-gauche; }
+html[data-nav='avant']::view-transition-new(root) { animation-name: vt-entree-droite; }
+html[data-nav='retour']::view-transition-old(root) { animation-name: vt-sortie-droite; }
+html[data-nav='retour']::view-transition-new(root) { animation-name: vt-entree-gauche; }
+
+::view-transition-group(entete),
+::view-transition-group(barre-action) { animation-duration: 240ms; animation-timing-function: var(--ease); }
+
+@keyframes vt-sortie-gauche { to { opacity: 0; transform: translateX(-28px); } }
+@keyframes vt-entree-droite { from { opacity: 0; transform: translateX(36px); } }
+@keyframes vt-sortie-droite { to { opacity: 0; transform: translateX(36px); } }
+@keyframes vt-entree-gauche { from { opacity: 0; transform: translateX(-28px); } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after,
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation-duration: 1ms !important;
+    transition-duration: 1ms !important;
+  }
+}

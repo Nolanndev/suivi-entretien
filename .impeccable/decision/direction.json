@@ -1,0 +1,122 @@
+{
+  "title": "Choisir l'univers visuel",
+  "question": "Le tirage propose « Plaque émaillée ». Garde-le, prends l'alternative, ou relance.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Plaque émaillée",
+      "kicker": "THE ROLL",
+      "lineage": "Plaques émaillées de garage, bidons d'huile et plaques de rue",
+      "thesis": "Chaque véhicule est une plaque émaillée patinée : couleurs passées, lettrage condensé, bord roulé.",
+      "palette": ["#F4F3EE", "#3F6F9C", "#7FAF98", "#E3A84A", "#1F2B35"],
+      "materials": ["émail passé au soleil (pastel, pas criard)", "lettrage condensé en capitales", "pictos au trait comme des pochoirs"],
+      "viewport": "Barre d'onglets en bas (Véhicules · Pièces · Réglages) ; l'accueil empile les véhicules comme des plaques émaillées avec, pour chacun, son compteur en chiffres « plaque de rue » et le prochain entretien.",
+      "risk": "Si l'émail est rendu trop saturé ou trop rétro, ça devient un décor de bistrot ; on le garde pâle et fonctionnel.",
+      "raised": [
+        { "from": "challenger-console", "raise": "Les actions destructrices (supprimer un entretien, une pièce) sont isolées par un vrai vide, jamais à côté d'« Enregistrer »." },
+        { "from": "challenger-jcard", "raise": "Chiffres tabulaires alignés à droite partout : coûts, quantités et total d'entretien qui doit tomber juste, comme une colonne de minutes." },
+        { "from": "challenger-lexicon", "raise": "La couleur pleine est réservée aux plaques (véhicule, compteur, état) ; tout le reste reste calme." }
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "Carnet d'entretien tamponné",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Le carnet de service constructeur, tamponné par le garage à chaque révision",
+      "thesis": "L'historique se lit comme le carnet de la boîte à gants : une ligne par passage, validée d'un tampon.",
+      "palette": ["#F2F4F1", "#2E4A62", "#B5463A", "#C9D3CC", "#1C252C"],
+      "materials": ["grille du carnet (date · km · opération)", "tampon encreur", "trombone sur la facture"],
+      "viewport": "Barre d'onglets en bas ; fiche véhicule = colonne de lignes datées façon carnet, chaque entretien enregistré reçoit un tampon animé.",
+      "risk": "Le registre papier est la direction la plus attendue pour un carnet ; risque de pastiche administratif."
+    },
+    {
+      "id": "challenger-console",
+      "label": "Console sombre",
+      "verdict": "declined",
+      "lineage": "Consoles de développeur, sombre d'abord",
+      "thesis": "Panneaux graphite séparés par des filets d'un pixel.",
+      "palette": ["#1B1F24", "#2A3038", "#7CC4A0", "#E5C07B"],
+      "materials": ["graphite", "filets 1px"],
+      "viewport": "Panneaux persistants qui s'empilent sur mobile.",
+      "risk": "Lit comme un outil de dev, pas comme un garage.",
+      "case": "Ni toi ni le garage ne vous y reconnaissez ; et tu veux un clair par défaut selon le système.",
+      "kept": "L'isolement délibéré des actions destructrices."
+    },
+    {
+      "id": "challenger-jcard",
+      "label": "Jaquette de cassette",
+      "verdict": "declined",
+      "lineage": "J-card de mixtape écrite au stylo bille",
+      "thesis": "Liste écrite à la main, minutée pour tenir pile sur la face.",
+      "palette": ["#FFFFFF", "#2B4FA8", "#9AA0A6", "#C8352E"],
+      "materials": ["stylo bille bleu", "carton ligné"],
+      "viewport": "Face A / face B pliées.",
+      "risk": "L'écriture manuscrite gêne la lecture rapide au garage.",
+      "case": "Humain, mais pas mécanique ; la manuscrite ralentit la saisie.",
+      "kept": "Les durées alignées à droite qui doivent tomber juste → les totaux."
+    },
+    {
+      "id": "challenger-lexicon",
+      "label": "Page de dictionnaire",
+      "verdict": "declined",
+      "lineage": "Lexique XIXe, marge et planches couleur",
+      "thesis": "Texte noir serré, couleur confinée dans des planches encadrées.",
+      "palette": ["#111111", "#F1EBDD", "#D2412B", "#2A55A3"],
+      "materials": ["papier crème", "planches chromolitho"],
+      "viewport": "Colonnes à mesure fixe, mots-repères en tête.",
+      "risk": "Trop livresque pour un outil de garage.",
+      "case": "Ni l'identification ni la clarté produit.",
+      "kept": "La couleur confinée aux plaques."
+    },
+    {
+      "id": "challenger-zoo",
+      "label": "Plan de zoo",
+      "verdict": "declined",
+      "lineage": "Plan-guide de jardin zoologique",
+      "thesis": "Lobes de couleur plate, la côte fait la séparation.",
+      "palette": ["#8ED462", "#F5F1E4", "#FF705D", "#2BA0FF"],
+      "materials": ["aplats", "capsules colorées"],
+      "viewport": "Un lobe domine chaque écran.",
+      "risk": "Trop ludique et trop saturé.",
+      "case": "Contredit « couleurs légères » et « simple ».",
+      "kept": "Rien de transférable sans costume."
+    },
+    {
+      "id": "challenger-saville",
+      "label": "Pochette Factory",
+      "verdict": "declined",
+      "lineage": "Identité Factory Records (Saville)",
+      "thesis": "Noir mat, numéros de catalogue, couleurs codées.",
+      "palette": ["#0D0D0D", "#FFFFFF", "#E94B3C", "#3A7BD5"],
+      "materials": ["noir mat", "filets blancs"],
+      "viewport": "Index par numéro.",
+      "risk": "Code illisible pour un usage rapide.",
+      "case": "Perd sur les deux axes.",
+      "kept": "Numéroter n'apporte rien ici."
+    },
+    {
+      "id": "challenger-ikeda",
+      "label": "Champ de données",
+      "verdict": "declined",
+      "lineage": "Ryoji Ikeda, datamatics",
+      "thesis": "Codes-barres et sinusoïdes noir et blanc.",
+      "palette": ["#000000", "#FFFFFF"],
+      "materials": ["barres pixel", "monospace"],
+      "viewport": "Colonnes de données denses.",
+      "risk": "Froid, stroboscopique, IA-like.",
+      "case": "L'opposé de « humain ».",
+      "kept": "Rien."
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "canon": true,
+  "canonCard": {
+    "label": "Le standard de la catégorie",
+    "thesis": "Une appli iOS de suivi propre : listes groupées, blanc, un accent bleu.",
+    "palette": ["#FFFFFF", "#F2F2F7", "#1C1C1E", "#0A84FF"],
+    "materials": ["listes groupées iOS", "SF Symbols"],
+    "viewport": "Onglets en bas, listes groupées, fiches en cartes.",
+    "risk": "Indiscernable de n'importe quelle appli, sans âme mécanique."
+  },
+  "steer": true
+}
